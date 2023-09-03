@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Sorting</title>
+</head>
+<body>
+
+<h2>Original Array:</h2>
+<p id="originalArray"></p>
+
+<h2>Sorted Array (Ascending):</h2>
+<p id="sortedAscending"></p>
+
+<h2>Sorted Array (Descending):</h2>
+<p id="sortedDescending"></p>
+
+<script>
+    // Define an array of numbers
+    var numbers = [5, 2, 9, 1, 5, 6];
+
+    // Display the original array
+    document.getElementById("originalArray").innerHTML = numbers.join(", ");
+
+    // Sort the array in ascending order (default behavior)
+    var sortedAscending = numbers.slice().sort(function(a, b) {
+        return a - b;
+    });
+    document.getElementById("sortedAscending").innerHTML = sortedAscending.join(", ");
+
+    // Sort the array in descending order
+    var sortedDescending = numbers.slice().sort(function(a, b) {
+        return b - a;
+    });
+    document.getElementById("sortedDescending").innerHTML = sortedDescending.join(", ");
+</script>
+
+</body>
+</html>
