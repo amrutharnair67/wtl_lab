@@ -1,6 +1,3 @@
-@extends('layout')
-
-@section('title','About')
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="mb-5">Test Validation Form</h1>
+      <h1 class="mb-5">Form Validation Display</h1>
 
       <form>
         <div class="mb-3">
@@ -37,7 +34,9 @@
               id="invalidCheck"
               required
             />
-           
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
           </div>
         </div>
 
