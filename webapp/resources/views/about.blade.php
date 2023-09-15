@@ -20,7 +20,7 @@
           <input type="text" class="form-control" id="username" required />
         </div>
         <div class="mb-3">
-          <label for="email" class="form-label">Email address</label>
+          <label for="email" class="form-label">Email-address</label>
           <input type="email" class="form-control" id="email" required />
         </div>
         <div class="mb-3">
